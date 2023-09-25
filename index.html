@@ -28,22 +28,54 @@
         <div style="height: 80em;width: auto; background-color: #26003D; position: relative;">
             <h3 style="text-align: center;">TENGAMOS EN CUENTA AL USAR IA</h3>
             <br /><br /><br /><br /><br />
-            <a href=""
-                style="opacity: 0%; position: absolute; top: 20%; left: 32%; transform: translate(-50%, -50%); width: 400px; height: 200px; z-index: 1; display: block;">
-                <button id="great"
-                    style="width: 100%; height: 100%; background-color: white; color: #26003D; font-size: 24px;">A</button>
-            </a>
-            <a href=""
-                style="opacity: 0%; position: absolute; top: 20%; left: 64%; transform: translate(-50%, -50%); width: 400px; height: 200px; z-index: 1; display: block;">
-                <button id="warning"
-                    style="width: 100%; height: 100%; background-color: white; color: #26003D; font-size: 24px;">B</button>
-            </a>
-            <a href=""
-                style="opacity: 0%; position: absolute; top: 55%; left: 42%; transform: translate(-50%, -50%); width: 190px; height: 275px; z-index: 1; display: block;">
-                <button id="error"
-                    style="width: 100%; height: 100%; background-color: white; color: #26003D; font-size: 24px;">C</button>
-            </a>
-            <img src="images\Group 5.png" style="width: 100%; height: auto; z-index: 0;">
+            <div style="position: relative;">
+                <a href="" style="opacity: 0%;width: 18%; height: 16%; position: absolute; z-index: 9999; margin-left: 23.5%; margin-bottom: 50%; top: 8%;" id="boton" onmouseover="mostrarCajonB()" onmouseout="ocultarCajonB()">B</a>
+                <div id="cajonB" class="cajon" style="display: none;">
+                    <div class="slideshow-container" style="position: relative;">
+                        <div class="mySlidesB fade">
+                            <img src="img/B1.png" style="width:70%; position: absolute; margin-top: 80px; border-radius: 10%;">
+                        </div>
+        
+                        <div class="mySlidesB fade">
+                            <img src="img/B2.png" style="width:70%; position: absolute; margin-top: 80px; border-radius: 10%;">
+                        </div>
+                        <div class="mySlidesB fade">
+                            <img src="img/B3.png" style="width:70%; position: absolute; margin-top: 80px; border-radius: 10%;">
+                        </div>
+                    </div>
+                </div>
+                <a href="" style="opacity: 0%;width: 20%; height: 16%; position: absolute; z-index: 9999; margin-left: 53.6%; margin-bottom: 50%; top: 9.4%;" id="boton" onmouseover="mostrarCajonP()" onmouseout="ocultarCajonP()">B</a>
+                <div id="cajonP" class="cajon" style="display: none;">
+                    <div class="slideshow-container" style="position: relative;">
+                        <div class="mySlidesP fade">
+                            <img src="img/B1.png" style="width:70%; position: absolute; margin-top: 110px; border-radius: 10%;">
+                        </div>
+        
+                        <div class="mySlidesP fade">
+                            <img src="img/B2.png" style="width:70%; position: absolute; margin-top: 110px; border-radius: 10%;">
+                        </div>
+                        <div class="mySlidesP fade">
+                            <img src="img/B3.png" style="width:70%; position: absolute; margin-top: 110px; border-radius: 10%;">
+                        </div>
+                    </div>
+                </div>
+                <a href="" style="opacity: 0%;width: 12%; height: 13%; position: absolute; z-index: 9999; margin-left: 35.5%; margin-bottom: 50%; top: 88.5%;" id="boton" onmouseover="mostrarCajonR()" onmouseout="ocultarCajonR()">B</a>
+                <div id="cajonR" class="cajon" style="display: none;">
+                    <div class="slideshow-container" style="position: relative;">
+                        <div class="mySlidesR fade">
+                            <img src="img/B1.png" style="width:70%; position: absolute; margin-top: 370px; border-radius: 10%;">
+                        </div>
+        
+                        <div class="mySlidesR fade">
+                            <img src="img/B2.png" style="width:70%; position: absolute; margin-top: 370px; border-radius: 10%;">
+                        </div>
+                        <div class="mySlidesR fade">
+                            <img src="img/B3.png" style="width:70%; position: absolute; margin-top: 370px; border-radius: 10%;">
+                        </div>
+                    </div>
+                </div>
+                <img src="images\Group 5.png" style="width: 100%; height: auto; z-index: 0;">
+            </div>
         </div>
         <div style="height: 50em; width: auto; background-color: #26003D; position: relative;">
             <h3 class="title-final" style="text-align: center;">INFÓRMATE MÁS SOBRE LA INTELIGENCIA ARTIFICIAL</h3>
@@ -73,6 +105,75 @@
             </a>
         </footer>
     </header>
-</body>
+    <script>
+        //ventana
+        function mostrarCajonB() {
+            document.getElementById("cajonB").style.display = "block";
+        }
 
+        function ocultarCajonB() {
+            document.getElementById("cajonB").style.display = "none";
+        }
+
+        function mostrarCajonP() {
+            document.getElementById("cajonP").style.display = "block";
+        }
+
+        function ocultarCajonP() {
+            document.getElementById("cajonP").style.display = "none";
+        }
+
+        function mostrarCajonR() {
+            document.getElementById("cajonR").style.display = "block";
+        }
+
+        function ocultarCajonR() {
+            document.getElementById("cajonR").style.display = "none";
+        }
+
+        //Carrusel
+        let slideIndexB = 0;
+        let slideIndexP = 0;
+        let slideIndexR = 0;
+        showSlidesB();
+        showSlidesP();
+        showSlidesR();
+
+        function showSlidesB() {
+            let i;
+            let slides = document.getElementsByClassName("mySlidesB");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndexB++;
+            if (slideIndexB > slides.length) {slideIndexB = 1}
+            slides[slideIndexB-1].style.display = "block";
+            setTimeout(showSlidesB, 4000);
+        }
+
+        function showSlidesP() {
+            let i;
+            let slides = document.getElementsByClassName("mySlidesP");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndexP++;
+            if (slideIndexP > slides.length) {slideIndexP = 1}
+            slides[slideIndexP-1].style.display = "block";
+            setTimeout(showSlidesP, 4000);
+        }
+
+        function showSlidesR() {
+            let i;
+            let slides = document.getElementsByClassName("mySlidesR");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndexR++;
+            if (slideIndexR > slides.length) {slideIndexR = 1}
+            slides[slideIndexR-1].style.display = "block";
+            setTimeout(showSlidesR, 4000);
+        }
+    </script>
+</body>
 </html>
