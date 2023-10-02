@@ -1,18 +1,70 @@
-/* styles.css */
-body {
-    overflow-x: hidden;
-}
-header {
-    margin: 0;
-    padding: 0;
-}
-img {
-    display: block;
-    width: 100%;
-    height: auto;
+h1,h2{ 
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    letter-spacing: 10%;
 }
 
-/* Cambiar el color del desplazamiento vertical */
+h1.titulo-principal,
+h2.sub-title {
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    text-shadow: 2px 2px 4px rgba(177, 6, 241, 2);
+}
+
+h1.titulo-principal {
+    color: #D1C4E9;
+    -webkit-text-stroke: 0.000001ch white;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2.sub-title {
+    color: #ba99f7;
+    font-size: 3em;
+    -webkit-text-stroke: 0.000001ch #26003D;
+    top: 310px;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.2);
+}
+
+h1.titulo-info {
+    margin-left: 8%;
+    color: #ba99f7;
+    font-size: 2.9em;
+    -webkit-text-stroke: 0.000001ch #26003D;
+    text-shadow: 2px 2px 4px rgba(177, 6, 241, 2);
+}
+
+h2.parrafo-info {
+    margin-left: 8%;
+    color: #D1C4E9;
+    -webkit-text-stroke: 0.000001ch white;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 1);
+}
+
+
+.color-fondo {
+    background-color: #26003D;
+}
+
+img.imagen-fondo {
+    width: 50%;
+}
+
+
+p.titulo-seccion{
+    display: flex; justify-content: center; align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 10%;
+    color: #D1C4E9; /* Este es un tono de violeta claro */
+    -webkit-text-stroke: 0.000001ch white; /* Añade un borde blanco alrededor del texto */
+    text-shadow: 2px 2px 4px rgba(177, 6, 241, 1); /* Sombra de color morado claro */
+
+            
+}
+
 ::-webkit-scrollbar {
     width: 6px; /* Ancho de la barra de desplazamiento */
 }
@@ -25,75 +77,74 @@ img {
     background-color: purple; /* Color del "pulgarcito" de desplazamiento */
 }
 
-h1 {
+
+.titulo-seccion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 30px;
     letter-spacing: 10%;
-    color: #D1C4E9; /* Este es un tono de violeta claro */
-    -webkit-text-stroke: 0.0001px white; /* Añade un borde blanco alrededor del texto */
-    
-    position: absolute;
-    top: 1085px;
-    left: 189px;
-    width: 1128px;
-    height: 60px;
+    color: #D1C4E9;
+    -webkit-text-stroke: 0.000001ch white;
+    text-shadow: 2px 2px 4px rgba(177, 6, 241, 1);
 }
 
-.random-circles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-  }
-  
-  .circle {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.5); /* Color del círculo blanco semi-transparente */
-    border-radius: 50%;
-  }
-  
-  
+.botones-container {
+    position: relative;
+    text-align: center;
+}
 
+.boton-enlace {
+    opacity: 0%;
+    position: absolute;
+    display: block;
+}
 
-h2 {
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: mixed;
+.boton {
+    cursor: pointer;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    color: #26003D;
     font-size: 24px;
-    line-height: 40px;
-    letter-spacing: 10%;
-    color: #FFFFFF;
-    position: absolute;
-    top: 1277px;
-    left: 189px;
-    width: 870px;
-    height: 417px;
 }
 
-h3 {
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: bold;
-    font-size: 30px;
-    letter-spacing: 10%;
-    color: #D1C4E9; /* Este es un tono de violeta claro */
-    -webkit-text-stroke: 0.000001ch white; /* Añade un borde blanco alrededor del texto */
-    
+#great.boton-enlace {
+    opacity: 0%;
     position: absolute;
-    left: 36%;
+    top: 20%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 200px;
+    z-index: 1;
+    display: block;
 }
 
-.title-final{
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: bold;
-    font-size: 30px;
-    letter-spacing: 10%;
-    color: #D1C4E9; /* Este es un tono de violeta claro */
-    -webkit-text-stroke: 0.000001ch white; /* Añade un borde blanco alrededor del texto */
-    
-    position: absolute;
-    left: 28%;
+#warning.boton-enlace{
+    opacity: 0%;
+    position: absolute; 
+    top: 20%; 
+    left: 64%; 
+    transform: translate(-50%, -50%); 
+    width: 400px; 
+    height: 200px; 
+    z-index: 1; 
+    display: block;
+}
+
+#error.boton-enlace{
+    opacity: 0%; 
+    position: absolute; 
+    top: 78%; 
+    left: 42%; 
+    transform: translate(-50%, -50%); 
+    width: 190px; 
+    height: 275px; 
+    z-index: 1; 
+    display: block;
 }
 
 #great {
@@ -108,27 +159,112 @@ h3 {
     cursor: zoom-in;
 }
 
-/* Hide the images by default */
-.mySlidesB {
-display: none;
+.group-image {
+    width: 100%;
+    height: auto;
 }
 
-.mySlidesP {
-    display: none;
+/* Estilos para la sección de "INFÓRMATE MÁS SOBRE LA INTELIGENCIA ARTIFICIAL" */
+.informate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 10%;
+    color: #D1C4E9;
+    -webkit-text-stroke: 0.000001ch white;
+    text-shadow: 2px 2px 4px rgba(177, 6, 241, 1);
 }
 
-.mySlidesR {
-    display: none;
+.video {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
 }
 
-/* Fading animation */
-.fade {
-animation-name: fade;
-animation-duration: 1.5s;
+.video iframe {
+    border: 6px solid #AD2BFF;
+    border-radius: 10px;
 }
 
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+/* Estilos para la sección de "Cuéntanos tu opinión Sobre la IA en la educación superior" */
+.center-item{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.cuentanos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 10%;
+    color: #D1C4E9;
+    -webkit-text-stroke: 0.000001ch white;
+    text-shadow: 2px 2px 4px rgba(177, 6, 241, 1);
+}
+
+.encuestas-container {
+    display: flex;
+    justify-content: center;
+}
+
+.encuesta-icon {
+    margin-right: 5%;
+    width: 15%;
+    height: 7.5%;
+}
+
+/* Estilos generales */
+.color-fondo {
+    background-color: #26003D;
+}
+
+/* Otros estilos específicos (añade los tuyos si es necesario) */
+
+/* Estilos para el ícono de Instagram */
+.instagram-icon {
+    width: 52.5%;
+    transition: transform 0.3s ease;
+}
+
+img{
+    transition: transform 0.3s ease;
+}
+
+.facebook-icon {
+    width: 50%;
+    margin-left: 4.5%;
+    transition: transform 0.3s ease;
+}
+
+.facebook-icon:hover{
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón sobre la imagen */
+}
+
+.instagram-icon:hover{
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón sobre la imagen */
+}
+
+.title-final{
+    display: flex; justify-content: center; align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 10%;
+    color: #D1C4E9; /* Este es un tono de violeta claro */
+    -webkit-text-stroke: 0.000001ch white;text-shadow: 2px 2px 4px rgba(177, 6, 241, 3); /* Sombra de color morado claro */
+ /* Añade un borde blanco alrededor del texto */
+}
+
+/* Estilos para el logo de la Universidad del Quindío */
+.uniquindio-logo {
+    height: 15rem;
 }
 
