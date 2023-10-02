@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <audio autoplay loop volume="0.5">
+        <source src="images/music.mp3" style="display: none;" type="audio/mpeg">
+    </audio>
     <header>
         <img src="images\Frame 1.png">
         <div style="height: 80em;width: auto; background-color: #26003D;">
@@ -29,48 +32,48 @@
             <h3 style="text-align: center;">TENGAMOS EN CUENTA AL USAR IA</h3>
             <br /><br /><br /><br /><br />
             <div style="position: relative;">
-                <a href="" style="opacity: 0%;width: 18%; height: 16%; position: absolute; z-index: 9999; margin-left: 23.5%; margin-bottom: 50%; top: 8%;" id="boton" onmouseover="mostrarCajonB()" onmouseout="ocultarCajonB()">B</a>
+                <a style="opacity: 0%;width: 18%; height: 16%; position: absolute; z-index: 9999; margin-left: 23.5%; margin-bottom: 50%; top: 8%;" id="boton" onmouseover="mostrarCajonB()" onmouseout="ocultarCajonB()" onmousedown="cambiarEstadoB()">B</a>
                 <div id="cajonB" class="cajon" style="display: none;">
                     <div class="slideshow-container" style="position: relative;">
                         <div class="mySlidesB fade">
-                            <img src="img/B1.png" style="width:70%; position: absolute; margin-top: 80px; margin-left: 2%; border-radius: 10%;">
+                            <img src="img/B1.png" style="width:70%; position: absolute; margin-top: 7%; margin-left: 2%; border-radius: 10%;">
                         </div>
         
                         <div class="mySlidesB fade">
-                            <img src="img/B2.png" style="width:70%; position: absolute; margin-top: 80px; margin-left: 2%; border-radius: 10%;">
+                            <img src="img/B2.png" style="width:70%; position: absolute; margin-top: 7%; margin-left: 2%; border-radius: 10%;">
                         </div>
                         <div class="mySlidesB fade">
-                            <img src="img/B3.png" style="width:70%; position: absolute; margin-top: 80px; margin-left: 2%; border-radius: 10%;">
+                            <img src="img/B3.png" style="width:70%; position: absolute; margin-top: 7%; margin-left: 2%; border-radius: 10%;">
                         </div>
                     </div>
                 </div>
-                <a href="" style="opacity: 0%;width: 20%; height: 16%; position: absolute; z-index: 9999; margin-left: 53.6%; margin-bottom: 50%; top: 9.4%;" id="boton" onmouseover="mostrarCajonP()" onmouseout="ocultarCajonP()">B</a>
+                <a style="opacity: 0%;width: 20%; height: 16%; position: absolute; z-index: 9999; margin-left: 53.6%; margin-bottom: 50%; top: 9.4%;" id="boton" onmouseover="mostrarCajonP()" onmouseout="ocultarCajonP()" onmousedown="cambiarEstadoP()">B</a>
                 <div id="cajonP" class="cajon" style="display: none;">
                     <div class="slideshow-container" style="position: relative;">
                         <div class="mySlidesP fade">
-                            <img src="img/P1.png" style="width:70%; position: absolute; margin-top: 110px; margin-left: 20%; border-radius: 10%;">
+                            <img src="img/P1.png" style="width:70%; position: absolute; margin-top: 8%; margin-left: 20%; border-radius: 10%;">
                         </div>
         
                         <div class="mySlidesP fade">
-                            <img src="img/P2.png" style="width:70%; position: absolute; margin-top: 110px; margin-left: 20%; border-radius: 10%;">
+                            <img src="img/P2.png" style="width:70%; position: absolute; margin-top: 8%; margin-left: 20%; border-radius: 10%;">
                         </div>
                         <div class="mySlidesP fade">
-                            <img src="img/P3.png" style="width:70%; position: absolute; margin-top: 110px; margin-left: 20%; border-radius: 10%;">
+                            <img src="img/P3.png" style="width:70%; position: absolute; margin-top: 8%; margin-left: 20%; border-radius: 10%;">
                         </div>
                     </div>
                 </div>
-                <a href="" style="opacity: 0%;width: 12%; height: 13%; position: absolute; z-index: 9999; margin-left: 35.5%; margin-bottom: 50%; top: 88.5%;" id="boton" onmouseover="mostrarCajonR()" onmouseout="ocultarCajonR()">B</a>
-                <div id="cajonR" class="cajon" style="display: none;">
-                    <div class="slideshow-container" style="position: relative;">
+                <a style="opacity: 0%;width: 12%; height: 13%; position: absolute; z-index: 9999; margin-left: 35.5%; margin-bottom: 50%; top: 88.5%;" id="boton" onmouseover="mostrarCajonR()" onmouseout="ocultarCajonR()" onmousedown="cambiarEstadoR()">B</a>
+                <div id="cajonR" class="cajon" style="display: none; position: relative;">
+                    <div class="slideshow-container">
                         <div class="mySlidesR fade">
-                            <img src="img/R1.png" style="width:70%; position: absolute; margin-top: 370px; margin-left: 8%; border-radius: 10%;">
+                            <img src="img/R1.png" style="width:70%; position: absolute; margin-top: 38%; margin-left: 8%; border-radius: 10%;">
                         </div>
         
                         <div class="mySlidesR fade">
-                            <img src="img/R2.png" style="width:70%; position: absolute; margin-top: 370px; margin-left: 8%; border-radius: 10%;">
+                            <img src="img/R2.png" style="width:70%; position: absolute; margin-top: 38%; margin-left: 8%; border-radius: 10%;">
                         </div>
                         <div class="mySlidesR fade">
-                            <img src="img/R3.png" style="width:70%; position: absolute; margin-top: 370px; margin-left: 8%; border-radius: 10%;">
+                            <img src="img/R3.png" style="width:70%; position: absolute; margin-top: 38%; margin-left: 8%; border-radius: 10%;">
                         </div>
                     </div>
                 </div>
@@ -129,6 +132,46 @@
 
         function ocultarCajonR() {
             document.getElementById("cajonR").style.display = "none";
+        }
+
+        let estadoB = 0;
+        let estadoP = 0;
+        let estadoR = 0;
+
+        function cambiarEstadoB() {
+            if (estadoB == 0) {
+                document.getElementById("cajonB").style.display = "block";
+                estadoB=1;
+                estadoP = 0;
+                estadoR = 0;
+            }else{
+                document.getElementById("cajonB").style.display = "none";
+                estadoB=0;
+            }
+        }
+
+        function cambiarEstadoP() {
+            if (estadoP == 0) {
+                document.getElementById("cajonP").style.display = "block";
+                estadoP=1;
+                estadoB = 0;
+                estadoR = 0;
+            }else{
+                document.getElementById("cajonP").style.display = "none";
+                estadoP=0;
+            }
+        }
+
+        function cambiarEstadoR() {
+            if (estadoR == 0) {
+                document.getElementById("cajonR").style.display = "block";
+                estadoR=1;
+                estadoP = 0;
+                estadoB = 0;
+            }else{
+                document.getElementById("cajonR").style.display = "none";
+                estadoR=0;
+            }
         }
 
         //Carrusel
