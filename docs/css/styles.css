@@ -185,6 +185,11 @@ p.titulo-seccion{
     margin: auto;
 }
 
+.size-video{
+    width:560px;
+    height:315px
+}
+
 .video iframe {
     border: 6px solid #AD2BFF;
     border-radius: 10px;
@@ -265,6 +270,76 @@ img{
 
 /* Estilos para el logo de la Universidad del Quindío */
 .uniquindio-logo {
+    width: 100%;
     height: 15rem;
 }
 
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    /* Puedes agregar reglas de estilo específicas aquí */
+    header {
+        overflow-x: hidden;
+        max-width: 100% /* Evita el desplazamiento horizontal en dispositivos móviles */
+    }
+    
+    h1.titulo-principal {
+        color: #D1C4E9;
+        -webkit-text-stroke: 0.000001ch white;
+        text-align: center;
+        font-size: 1em;
+        top: 2%;
+        left: 0%;
+    }
+    
+    h2.sub-title {
+        color: #ba99f7;
+        font-size: 1em;
+        -webkit-text-stroke: 0.000001ch #26003D;
+        top: 4%;
+        left: 0%;
+        text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.2);
+    }
+
+    .imagen-fondo{
+        opacity: 0;
+    }
+
+    .video {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del flujo a vertical */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .size-video {
+        max-width: 100%; /* Asegura que los videos no se extiendan más allá del contenedor */
+        height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+        margin-bottom: 10px; /* Espacio entre los videos si lo deseas */
+    }
+
+    .center-item {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del flujo a vertical */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .center-item img {
+        max-width: 100%; /* Asegura que las imágenes no se extiendan más allá del contenedor */
+        height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+        margin-bottom: 10px; /* Espacio entre las imágenes si lo deseas */
+    }
+
+    .uniquindio-logo {
+        height: 5rem;
+    }
+
+    .instagram-icon{
+        width: 50%;
+        margin-left: 18%;
+    }
+
+    .facebook-icon{
+        width: 51%;
+        margin-left: 18%;
+    }
+
+}
