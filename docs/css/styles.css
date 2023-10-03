@@ -323,14 +323,12 @@ img{
     }
 
     p.cuentanos-titulo{
-        margin-left: 1.6%;
         margin-top: -3%;
         font-size: 0.6em;
     }
 
 
     p.informate-titulo{
-        margin-left: 3.5%;
         margin-top: -3%;
         display: flex;
     justify-content: center;
