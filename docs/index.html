@@ -53,53 +53,21 @@
             <div class="titulo-seccion-container">
                 <p class="titulo-seccion">TENGAMOS EN CUENTA AL USAR LA IA</p>
             </div>
-            <div style="position: relative;z-index: 9999;">
-                <a style="opacity: 0%;width: 18%; height: 16%; position: absolute; z-index: 9999; margin-left: 23.5%; margin-bottom: 50%; top: 8%;" id="boton" onmouseover="mostrarCajonB()" onmouseout="ocultarCajonB()" onmousedown="cambiarEstadoB()">B</a>
-                <div id="cajonB" class="cajon" style="display: none;">
-                    <div class="slideshow-container" style="position: relative;">
-                        <div class="mySlidesB fade">
-                            <img src="img/B1.png" style="width:70%; position: absolute; margin-top: 7%; margin-left: 2%; border-radius: 10%;">
-                        </div>
-        
-                        <div class="mySlidesB fade">
-                            <img src="img/B2.png" style="width:70%; position: absolute; margin-top: 7%; margin-left: 2%; border-radius: 10%;">
-                        </div>
-                        <div class="mySlidesB fade">
-                            <img src="img/B3.png" style="width:70%; position: absolute; margin-top: 7%; margin-left: 2%; border-radius: 10%;">
-                        </div>
-                    </div>
-                </div>
-                <a style="opacity: 0%;width: 20%; height: 16%; position: absolute; z-index: 9999; margin-left: 53.6%; margin-bottom: 50%; top: 9.4%;" id="boton" onmouseover="mostrarCajonP()" onmouseout="ocultarCajonP()" onmousedown="cambiarEstadoP()">B</a>
-                <div id="cajonP" class="cajon" style="display: none;">
-                    <div class="slideshow-container" style="position: relative;">
-                        <div class="mySlidesP fade">
-                            <img src="img/P1.png" style="width:70%; position: absolute; margin-top: 8%; margin-left: 20%; border-radius: 10%;">
-                        </div>
-        
-                        <div class="mySlidesP fade">
-                            <img src="img/P2.png" style="width:70%; position: absolute; margin-top: 8%; margin-left: 20%; border-radius: 10%;">
-                        </div>
-                        <div class="mySlidesP fade">
-                            <img src="img/P3.png" style="width:70%; position: absolute; margin-top: 8%; margin-left: 20%; border-radius: 10%;">
-                        </div>
-                    </div>
-                </div>
-                <a style="opacity: 0%;width: 12%; height: 13%; position: absolute; z-index: 9999; margin-left: 35.5%; margin-bottom: 50%; top: 88.5%;" id="boton" onmouseover="mostrarCajonR()" onmouseout="ocultarCajonR()" onmousedown="cambiarEstadoR()">B</a>
-                <div id="cajonR" class="cajon" style="display: none; position: relative;">
-                    <div class="slideshow-container">
-                        <div class="mySlidesR fade">
-                            <img src="img/R1.png" style="width:70%; position: absolute; margin-top: 38%; margin-left: 26%; border-radius: 10%;">
-                        </div>
-        
-                        <div class="mySlidesR fade">
-                            <img src="img/R2.png" style="width:70%; position: absolute; margin-top: 38%; margin-left: 26%; border-radius: 10%;">
-                        </div>
-                        <div class="mySlidesR fade">
-                            <img src="img/R3.png" style="width:70%; position: absolute; margin-top: 38%; margin-left: 26%; border-radius: 10%;">
-                        </div>
-                    </div>
-                </div>
-                <img src="images\Group 5.png" style="width: 100%; height: auto; z-index: 0;">
+            <div class="botones-container">
+                <a href="#" class="boton-enlace" id="great">
+                    <button style="cursor:crosshair; width: 100%; height: 100%; background-color: white; color: #26003D; font-size: 24px;">A</button>
+                </a>
+
+                <a href="" class="boton-enlace" id="warning">
+                <button 
+                    style="cursor: help; width: 100%; height: 100%; background-color: white; color: #26003D; font-size: 24px;">B</button>
+                </a>
+
+                <a href="" class="boton-enlace" id="error">
+                    <button style="cursor: zoom-in; width: 100%; height: 100%; background-color: white; color: #26003D; font-size: 24px;">C</button>
+                </a>
+
+                <img src="images/Group 5.png" class="group-image" alt="Group Image">
             </div>
         </div>
         <div class="color-fondo"><br /><br /><br /><br /><br /><br /><br /></div>
@@ -146,30 +114,26 @@
                 <br /><br /><br />
             </div>
             <div class="center-item" style="cursor: pointer;">
-                <div style="display: flex;justify-content: center;">
-                    <a href="https://docs.google.com/forms/d/1sy26rhGXnaEsQj6QZwxAVoHeaDGjpPbS0V_QUoYfAGY/edit" style="text-decoration: none; margin-right: 5%;">
+                    <a href="https://docs.google.com/forms/d/1sy26rhGXnaEsQj6QZwxAVoHeaDGjpPbS0V_QUoYfAGY/edit" style="text-decoration: none;">
                         <img src="images/encuesta.png"  onmouseover="enlargeImage(this);" onmouseout="shrinkImage(this);">
                     </a>
                     
                     <a href="https://docs.google.com/forms/d/1tdSRJ7afUx1Grqtiy_uzYv-AfgvBv5SkRfSQ7btma6Y/edit" style="text-decoration: none;">
                         <img src="images/escuesta_teachers.png"  onmouseover="enlargeImage(this);" onmouseout="shrinkImage(this);">
                     </a>
-                </div>
             </div>
             <div class="title-final">  
                 <br /><br /><br /><br />
                 <p>SUMÉRGETE !</p> 
             </div>
-            <div class="center-item" style="cursor: pointer;">
-                <div style="display: flex;justify-content: center;">
-                    <a href="https://3rzx7.zappar.io/8126875524638521933/v8/" style="text-decoration: none; margin-right: 5%;">
+            <div class="center-item" style="cursor: pointer;display: flex;justify-content: center;">
+                    <a href="https://3rzx7.zappar.io/8126875524638521933/v8/" style="text-decoration: none;">
                         <img src="images/realidad_aumentada.png"  onmouseover="enlargeImage(this);" onmouseout="shrinkImage(this);">
                     </a>
                     
                     <a href="https://www.spatial.io/s/IA-en-la-Educacion-Superior-UQ-6514f4500bb8936ebfd7cab4?share=8065457630615205466" style="text-decoration: none;">
                         <img src="images/metaverso.png"  onmouseover="enlargeImage(this);" onmouseout="shrinkImage(this);">
                     </a>
-                </div>
             </div>
             <br /><br /><br />
         </div>
@@ -183,116 +147,6 @@
             </div>
         </footer>
     </header>
-    <script>
-        //ventana
-        function mostrarCajonB() {
-            document.getElementById("cajonB").style.display = "block";
-        }
-
-        function ocultarCajonB() {
-            document.getElementById("cajonB").style.display = "none";
-        }
-
-        function mostrarCajonP() {
-            document.getElementById("cajonP").style.display = "block";
-        }
-
-        function ocultarCajonP() {
-            document.getElementById("cajonP").style.display = "none";
-        }
-
-        function mostrarCajonR() {
-            document.getElementById("cajonR").style.display = "block";
-        }
-
-        function ocultarCajonR() {
-            document.getElementById("cajonR").style.display = "none";
-        }
-
-        let estadoB = 0;
-        let estadoP = 0;
-        let estadoR = 0;
-
-        function cambiarEstadoB() {
-            if (estadoB == 0) {
-                document.getElementById("cajonB").style.display = "block";
-                estadoB=1;
-                estadoP = 0;
-                estadoR = 0;
-            }else{
-                document.getElementById("cajonB").style.display = "none";
-                estadoB=0;
-            }
-        }
-
-        function cambiarEstadoP() {
-            if (estadoP == 0) {
-                document.getElementById("cajonP").style.display = "block";
-                estadoP=1;
-                estadoB = 0;
-                estadoR = 0;
-            }else{
-                document.getElementById("cajonP").style.display = "none";
-                estadoP=0;
-            }
-        }
-
-        function cambiarEstadoR() {
-            if (estadoR == 0) {
-                document.getElementById("cajonR").style.display = "block";
-                estadoR=1;
-                estadoP = 0;
-                estadoB = 0;
-            }else{
-                document.getElementById("cajonR").style.display = "none";
-                estadoR=0;
-            }
-        }
-
-        //Carrusel
-        let slideIndexB = 0;
-        let slideIndexP = 0;
-        let slideIndexR = 0;
-        showSlidesB();
-        showSlidesP();
-        showSlidesR();
-
-        function showSlidesB() {
-            let i;
-            let slides = document.getElementsByClassName("mySlidesB");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndexB++;
-            if (slideIndexB > slides.length) {slideIndexB = 1}
-            slides[slideIndexB-1].style.display = "block";
-            setTimeout(showSlidesB, 4000);
-        }
-
-        function showSlidesP() {
-            let i;
-            let slides = document.getElementsByClassName("mySlidesP");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndexP++;
-            if (slideIndexP > slides.length) {slideIndexP = 1}
-            slides[slideIndexP-1].style.display = "block";
-            setTimeout(showSlidesP, 4000);
-        }
-
-        function showSlidesR() {
-            let i;
-            let slides = document.getElementsByClassName("mySlidesR");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndexR++;
-            if (slideIndexR > slides.length) {slideIndexR = 1}
-            slides[slideIndexR-1].style.display = "block";
-            setTimeout(showSlidesR, 4000);
-        }
-    </script>
     <script src="js/scripts.js"></script>
 </body>
 
