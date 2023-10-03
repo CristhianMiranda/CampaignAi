@@ -300,6 +300,51 @@ img{
         text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.2);
     }
 
+    h1.titulo-info{
+        width: 13.8em;
+        font-size: 1.5em;
+     }
+
+    h2.parrafo-info{
+        font-size: 1.2em;
+        text-shadow: 1px 1px 1px black;
+   }
+
+   p.titulo-seccion{
+    display: flex; justify-content: center; align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 0.6em;
+    letter-spacing: 10%;
+    color: #D1C4E9; /* Este es un tono de violeta claro */
+    -webkit-text-stroke: 0.000001ch white; /* Añade un borde blanco alrededor del texto */
+    text-shadow: 2px 2px 4px rgba(177, 6, 241, 1); /* Sombra de color morado claro */
+    margin: 0 0 3%;
+    }
+
+    p.cuentanos-titulo{
+        margin-left: 1.6%;
+        margin-top: -3%;
+        font-size: 0.6em;
+    }
+
+
+    p.informate-titulo{
+        margin-left: 3.5%;
+        margin-top: -3%;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #D1C4E9;
+    -webkit-text-stroke: 0.000001ch white;
+    text-shadow: 2px 2px 4px rgba(177, 6, 241, 1);
+
+    }
+
+
     .imagen-fondo{
         opacity: 0;
     }
@@ -333,6 +378,7 @@ img{
     }
 
     .instagram-icon{
+        margin: -10%;
         width: 50%;
         margin-left: 18%;
     }
